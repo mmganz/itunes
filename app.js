@@ -19,7 +19,9 @@ function drawSongs(songList){
         <div class="card-block">
           <p class="card-text">${songs.collection}</p>
           <p class="card-text">${songs.price}</p>
-          <audio src="${songs.preview}" class="card-link">Preview</audio>
+          <audio controls>
+            <source src="${songs.preview}">
+            </audio>
         </div>
       </div>
     </div>`
