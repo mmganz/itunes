@@ -4,6 +4,6 @@
 .card {
   border: none; }
 
-.img {
+img {
   width: 100%;
   filter: blur(4px); }
