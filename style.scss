@@ -1,3 +1,5 @@
 .card-columns{
     border:5px solid red;
+  @include media-breakpoint-only(lg) {
+    column-count: 4;}
 }
