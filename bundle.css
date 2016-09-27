@@ -1,2 +1,3 @@
 .template {
-  outline: 5px solid red; }
+  outline: 5px solid red;
+  display: inline-block; }
