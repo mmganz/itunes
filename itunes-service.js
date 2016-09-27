@@ -11,7 +11,7 @@ var itunes = {
         var songList = response.results.map(function (song) {
                   return {
                       title: song.trackName,
-                      albumArt: song.artworkUrl60,
+                      albumArt: song.artworkUrl400,
                       artist: song.artistName,
                       collection: song.collectionName,
                       price: song.collectionPrice,
