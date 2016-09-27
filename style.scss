@@ -1,3 +1,5 @@
 .songs-container{
+    display: flex;
+    flex-direction:column;
     border:5px solid red;
 }
