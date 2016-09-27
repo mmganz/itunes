@@ -9,8 +9,22 @@ function drawSongs(songList){
   var template = ''
   for (var i = 0; i < songList.length; i++) {
     var songs =songList[i]
-    template+= `<h1>${songs.title}</h1>`
+    template+= ` <div class="template">
+      <div class="card">
+        <div class="card-block">
+          <h4 class="card-title">${songs.title}</h4>
+          <h6 class="card-subtitle text-muted">${songs.artist}</h6>
+        </div>
+        <img src="${songs.albumArt}">
+        <div class="card-block">
+          <p class="card-text">${songs.collection}</p>
+          <p class="card-text">${songs.price}</p>
+          <audio src="${songs.preview}" class="card-link">Preview</audio>
+        </div>
+      </div>
+    </div>`
   }
+
   songElem.innerHTML = template;
   console.log(songList);
   
