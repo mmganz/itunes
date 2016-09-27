@@ -20,12 +20,22 @@ function drawSongs(songList){
           <p class="card-text">${songs.collection}</p>
           <p class="card-text">${songs.price}</p>
           <audio controls>
-            <source src="${songs.preview}">
+            <source id="audios" src="${songs.preview}">
             </audio>
         </div>
       </div>
     </div>`
   }
+
+  document.addEventListener('play', function(e){
+  var audios = document.getElementsByTagName('audio');
+  for(var i = 0, len = audios.length; i < len;i++){
+      if(audios[i] != e.target){
+          audios[i].pause();
+      }
+  }
+}, 
+true);
 
   songElem.innerHTML = template;
   console.log(songList);
