@@ -13,7 +13,7 @@ function drawSongs(songList){
       <div class="card">
          <img class="card-img-top" src="${songs.albumArt}">
           <div class="card-block">
-           <h6 class="card-title title text">${songs.title}</h6>
+          <h6 class="card-title title text">${songs.title}</h6>
           <p class="card-subtitle artist text">${songs.artist}</p>
           <p class="card-text album text">${songs.collection}</p>
           <p class="card-text price text">$${songs.price}</p>
