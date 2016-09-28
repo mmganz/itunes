@@ -5,13 +5,13 @@ body {
   background-size: cover; }
 
 .form-control::-moz-placeholder {
-  color: #adbbbc; }
+  color: #212121; }
 
 .form-control:-ms-input-placeholder {
-  color: #adbbbc; }
+  color: #212121; }
 
 .form-control::-webkit-input-placeholder {
-  color: #adbbbc; }
+  color: #212121; }
 
 .form {
   margin-top: 10%;

@@ -8,13 +8,13 @@ background: url("images/landscape.jpg");
 }
 
 .form-control::-moz-placeholder {
-  color: #adbbbc;
+  color: #212121;
 }
 .form-control:-ms-input-placeholder {
-  color: #adbbbc;
+  color: #212121;
 }
 .form-control::-webkit-input-placeholder {
-  color: #adbbbc;
+  color: #212121;
 }	
 
 .form{
@@ -63,8 +63,6 @@ background: url("images/landscape.jpg");
 
 img{
     width: 27%;
-    // display:flex;
-    //filter: blur(1px);
     position: absolute;
     right: 6%;
     top: 10%;
