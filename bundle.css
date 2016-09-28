@@ -36,12 +36,13 @@ body {
 
 .card {
   color: white;
-  border: none;
   margin: 25px;
   margin-top: 30px;
   background: transparent;
   position: relative;
-  display: flex; }
+  display: flex;
+  border-radius: .25rem;
+  border: 1px solid rgba(225, 255, 255, 0.125); }
 
 .card-block {
   width: 73%; }
@@ -59,7 +60,11 @@ h6 {
   font-size: 1.1rem; }
 
 .album {
-  font-size: 1rem; }
+  font-size: 1rem;
+  font-style: italic; }
 
 .price {
   font-size: 0.9rem; }
+
+.text {
+  margin-right: 2px; }
