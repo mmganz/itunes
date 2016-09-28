@@ -11,12 +11,14 @@ function drawSongs(songList){
     var songs =songList[i]
     template+= ` <div class="template">
       <div class="card">
+     
          <img class="card-img-top" src="${songs.albumArt}">
+          
           <div class="card-block">
-          <h6 class="card-title">${songs.title}</h6>
-          <p class="card-subtitle">${songs.artist}</p>
-          <p class="card-text">${songs.collection}</p>
-          <p class="card-text">$${songs.price}</p>
+           <h6 class="card-title text">${songs.title}</h6>
+          <p class="card-subtitle text">${songs.artist}</p>
+          <p class="card-text text">${songs.collection}</p>
+          <p class="card-text text">$${songs.price}</p>
           <audio controls>
             <source id="audios" src="${songs.preview}">
             </audio>

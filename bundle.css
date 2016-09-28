@@ -4,13 +4,21 @@ body {
   background-attachment: fixed;
   background-size: cover; }
 
+.form-control::-moz-placeholder {
+  color: #adbbbc; }
+
+.form-control:-ms-input-placeholder {
+  color: #adbbbc; }
+
+.form-control::-webkit-input-placeholder {
+  color: #adbbbc; }
+
 .form {
   margin-top: 10%;
   margin-left: 33%; }
 
 .form-control {
-  background-color: transparent;
-  color: white; }
+  background-color: transparent; }
 
 .form-inline {
   text-align: center; }
@@ -32,7 +40,11 @@ body {
   margin: 25px;
   margin-top: 30px;
   background: transparent;
-  position: relative; }
+  position: relative;
+  display: flex; }
+
+.card-block {
+  width: 73%; }
 
 img {
   width: 27%;

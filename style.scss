@@ -7,6 +7,16 @@ background: url("images/landscape.jpg");
     background-size:cover;
 }
 
+.form-control::-moz-placeholder {
+  color: #adbbbc;
+}
+.form-control:-ms-input-placeholder {
+  color: #adbbbc;
+}
+.form-control::-webkit-input-placeholder {
+  color: #adbbbc;
+}	
+
 .form{
     margin-top: 10%;
     margin-left: 33%;
@@ -14,8 +24,6 @@ background: url("images/landscape.jpg");
 
 .form-control{
     background-color:transparent;
-    color:white;
-
 }
 
 .form-inline{
@@ -44,10 +52,18 @@ background: url("images/landscape.jpg");
     margin-top: 30px;
     background:transparent;
     position: relative;
+    display: flex;
 }
+
+.card-block{
+    width:73%;
+}
+
+
 
 img{
     width: 27%;
+    // display:flex;
     //filter: blur(1px);
     position: absolute;
     right: 6%;
