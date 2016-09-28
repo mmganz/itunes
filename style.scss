@@ -8,8 +8,8 @@ background: url("images/landscape.jpg");
 }
 
 .form{
-    margin-top: 200px;
-    margin-left: 50px
+    margin-top: 10%;
+    margin-left: 33%;
 }
 
 .form-control{
@@ -29,7 +29,7 @@ background: url("images/landscape.jpg");
 }
 
 #song-list{
-    margin-left:200px;
+    margin-left:33%;
 }
 
 .template{
@@ -41,10 +41,15 @@ background: url("images/landscape.jpg");
     color:white;
     border:none;
     margin:25px;
+    margin-top: 30px;
     background:transparent;
+    position: relative;
 }
 
 img{
-    width: 20%;
+    width: 27%;
     //filter: blur(1px);
+    position: absolute;
+    right: 6%;
+    top: 10%;
 }
