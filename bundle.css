@@ -2,8 +2,9 @@
   display: inline-block; }
 
 .card {
-  border: none; }
+  border: none;
+  margin: 25px; }
 
 img {
   width: 100%;
-  filter: blur(4px); }
+  filter: blur(1px); }

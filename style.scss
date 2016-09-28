@@ -1,13 +1,21 @@
+.form{
+    background:transparent;
+    color:white;
+}
+
 .template{
 //outline:1px solid red;
  display:inline-block;
 }
 
 .card{
+    color:white;
     border:none;
+    margin:25px;
+    background:transparent;
 }
 
 img{
-    width: 100%;
-    filter: blur(4px);
+    width: 20%;
+    //filter: blur(1px);
 }
