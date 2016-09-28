@@ -1,18 +1,35 @@
-html{
-      background: url("images/landscape.jpg") no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
+
 
 body{
-
+background: url("images/landscape.jpg"); 
+ background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size:cover;
 }
 
 .form{
-    background:transparent;
+    margin-top: 200px;
+    margin-left: 50px
+}
+
+.form-control{
+    background-color:transparent;
     color:white;
+
+}
+
+.form-inline{
+    text-align: center;
+}
+
+.btn{
+    background: transparent;
+    color:white;
+    border:white;
+}
+
+#song-list{
+    margin-left:200px;
 }
 
 .template{
