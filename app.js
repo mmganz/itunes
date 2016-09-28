@@ -11,9 +11,7 @@ function drawSongs(songList){
     var songs =songList[i]
     template+= ` <div class="template">
       <div class="card">
-     
          <img class="card-img-top" src="${songs.albumArt}">
-          
           <div class="card-block">
            <h6 class="card-title title text">${songs.title}</h6>
           <p class="card-subtitle artist text">${songs.artist}</p>
