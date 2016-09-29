@@ -10,18 +10,40 @@ background: url("images/landscape.jpg");
 
 .form-control::-moz-placeholder {
   color: #cefaff;
+    font-family: Raleway;
 }
+
+.form-control:-moz-placeholder {
+  color: #cefaff;
+    font-family: Raleway;
+}
+
 .form-control:-ms-input-placeholder {
   color: #cefaff;
+   font-family: Raleway;
 }
 .form-control::-webkit-input-placeholder {
   color: #cefaff;
+    font-family: Raleway;
 }	
+
+.form-control::placeholder {
+  color: #cefaff;
+    font-family: Raleway;
+}
+
+.form-control:placeholder-shown {
+  color: #cefaff;
+    font-family: Raleway;
+}
+
+
 
 .form{
     margin-top: 10%;
     margin-left: 29%;
     margin-bottom: 3%;
+     font-family: Raleway;
 }
 
 .form-control{
@@ -30,12 +52,14 @@ background: url("images/landscape.jpg");
 
 .form-inline{
     text-align: center;
+     font-family: Raleway;
 }
 
 .btn{
     background: transparent;
     color:white;
     border:white;
+    font-family: Raleway;
 }
 
 #song-list{
