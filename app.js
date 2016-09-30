@@ -1,4 +1,7 @@
-function getMusic(){
+function getMusic(event){
+  event.preventDefault();
+  var form = event.target;
+  form.artist
   var artist = document.getElementById('artist').value;
   itunes.getMusicByArtist(artist).then(drawSongs);
 }
