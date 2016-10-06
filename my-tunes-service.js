@@ -73,7 +73,7 @@ function clearData(){
 }
 
 function saveTracks(){
-    localStorage.setItem('song', JSON.stringify((myArray))
+    localStorage.setItem('song', JSON.stringify(myArray))
 }
 
 function loadTracks(){
