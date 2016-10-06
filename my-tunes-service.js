@@ -48,6 +48,7 @@ function MyTunes(){
             var songs = songList[i];
             if(songs.id == id){
                 myArray.push(songs)
+                saveTracks();
             }
         }
         return
@@ -71,11 +72,11 @@ function clearData(){
     localStorage.removeItem('song')
 }
 
-    function saveTracks(){
-        localStorage.setItem('song', JSON.stringify((myArray))
-    }
+function saveTracks(){
+    localStorage.setItem('song', JSON.stringify((myArray))
+}
 
-    function loadTracks(){
+function loadTracks(){
         var song = localStorage.getItem('song')
         if(song){
             song = JSON.parse(song)
