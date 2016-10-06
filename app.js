@@ -21,7 +21,7 @@ var removeh = function(id){
 }
 
 
-
+drawSongs(myTunes.returnMyTunes(), '#my-tunes')
 
 function drawSongs(songList, target){
 

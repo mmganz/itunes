@@ -46,22 +46,23 @@ function MyTunes(){
     myTunes.addTrack = function(id){       
         for(var i=0; i <songList.length; i++){
             var songs = songList[i];
-            if(songs.id == id){
+            if(songs.id == id){s
                 myArray.push(songs)
                 saveTracks();
+        return
             }
         }
-        return
     }
 
     myTunes.removeTrack = function(id){
-        for(var i=0; i<songList.length; i++){
-            var songs = songList[i];
-            if(songs.id == id){
+        for(var i=0; i<myArray.length; i++){
+            var song = myArray[i];
+            if(song.id == id){
                 myArray.splice(i,1)
+                saveTracks();
+        return
             }
         }
-        return
     }
 
 
@@ -86,3 +87,5 @@ function loadTracks(){
         return song;
     }
 }
+
+
