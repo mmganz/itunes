@@ -32,8 +32,8 @@ var itunes = {
 
 function MyTunes(){
     var myTunes = this;
-    var myTracks = loadTracks();
-    var myArray = [];
+    var myArray = loadTracks();
+   
 
     myTunes.returnMyTunes = function(){
         return myArray;
@@ -67,6 +67,21 @@ function MyTunes(){
     myTunes.promoteTrack = function(){}
     myTunes.demoteTrack = function(){}
 
-    function saveTracks(){}
-    function loadTracks(){}
+function clearData(){
+    localStorage.removeItem('song')
+}
+
+    function saveTracks(){
+        localStorage.setItem('song', JSON.stringify((myArray))
+    }
+
+    function loadTracks(){
+        var song = localStorage.getItem('song')
+        if(song){
+            song = JSON.parse(song)
+        }else{
+            song=[];
+        }
+        return song;
+    }
 }

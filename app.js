@@ -9,6 +9,7 @@ function getMusic(event){
 
 
 var myTunes = new MyTunes();
+
 var helper = function(id){
  myTunes.addTrack(id);
  drawSongs(myTunes.returnMyTunes(), '#my-tunes');
