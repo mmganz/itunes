@@ -24,7 +24,6 @@ var removeh = function(id){
 drawSongs(myTunes.returnMyTunes(), '#my-tunes')
 
 $('.promote').click(function(){
-  debugger;
   var $current = $(this).closest('div.template');
   var $previous = $current.prev('div.template');
   if($previous.length !==0){
