@@ -46,7 +46,7 @@ function MyTunes(){
     myTunes.addTrack = function(id){       
         for(var i=0; i <songList.length; i++){
             var songs = songList[i];
-            if(songs.id == id){s
+            if(songs.id == id){
                 myArray.push(songs)
                 saveTracks();
         return

@@ -23,6 +23,26 @@ var removeh = function(id){
 
 drawSongs(myTunes.returnMyTunes(), '#my-tunes')
 
+$('.promote').click(function(){
+  var $current = $(this).closest('div.template');
+  var $previous = $current.prev('div.template');
+  if($previous.length !==0){
+    $current.insertBefore($previous);
+  }
+  return false;
+
+});
+
+$('.demote').click(function(){
+  var $current = $(this).closest('div.template');
+  var $next = $current.next('div.template');
+  if($next.length !==0){
+    $current.insertAfter($next);
+  }
+return false;
+});
+
+
 function drawSongs(songList, target){
 
 
@@ -36,7 +56,7 @@ if(target != "#my-tunes"){
   for(var i in songList){
     var songs =songList[i]
     var songsTemplate = `   
-    <div class="template">
+    <div class="stay-template">
       <div class="card">
          <img class="card-img-top" src="${songs.albumArt}">
           <div class="card-block">
@@ -48,7 +68,7 @@ if(target != "#my-tunes"){
           <audio controls>
             <source id="audios" src="${songs.preview}">
             </audio>
-             <button onclick="helper(${songs.id})" class="btn btn-secondary">Add Song to MyTunes     </button>
+             <button onclick="helper(${songs.id})" class="btn btn-secondary">Add Song to MyTunes</button>
         </div>
       </div>
     </div>`
@@ -66,7 +86,9 @@ if(target != "#my-tunes"){
           <audio controls>
             <source id="audios" src="${songs.preview}">
             </audio>
-             <button onclick="removeh(${songs.id})" class="btn btn-secondary">Remove Song from MyTunes</button>
+             <button onclick="removeh(${songs.id})" class="btn btn-secondary">Remove Song</button>
+              <button class="btn btn-secondary promote">Promote Song</button>
+               <button class="btn btn-secondary demote">Demote</button>
         </div>
       </div>
     </div>`
