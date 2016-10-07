@@ -24,6 +24,7 @@ var removeh = function(id){
 drawSongs(myTunes.returnMyTunes(), '#my-tunes')
 
 $('.promote').click(function(){
+  debugger;
   var $current = $(this).closest('div.template');
   var $previous = $current.prev('div.template');
   if($previous.length !==0){
@@ -83,7 +84,6 @@ if(target != "#my-tunes"){
           <audio controls>
             <source id="audios" src="${songs.preview}">
             </audio>
-            <p></p>
             <div class="buttons">
              <button onclick="removeh(${songs.id})" class="btn btn-secondary remove">Remove</button>
               <button class="btn btn-secondary promote">Promote</button>
