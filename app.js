@@ -63,7 +63,6 @@ if(target != "#my-tunes"){
           <p class="card-subtitle artist text">${songs.artist}</p>
           <p class="card-text album text">${songs.collection}</p>
           <p class="card-text price text">$${songs.price}</p>
-          <p class="card-text id">${songs.id}</p>
           <audio controls>
             <source id="audios" src="${songs.preview}">
             </audio>
@@ -81,13 +80,15 @@ if(target != "#my-tunes"){
           <p class="card-subtitle artist text">${songs.artist}</p>
           <p class="card-text album text">${songs.collection}</p>
           <p class="card-text price text">$${songs.price}</p>
-          <p class="card-text id">${songs.id}</p>
           <audio controls>
             <source id="audios" src="${songs.preview}">
             </audio>
-             <button onclick="removeh(${songs.id})" class="btn btn-secondary">Remove Song</button>
-              <button class="btn btn-secondary promote">Promote Song</button>
-               <button class="btn btn-secondary demote">Demote Song</button>
+            <p></p>
+            <div class="buttons">
+             <button onclick="removeh(${songs.id})" class="btn btn-secondary remove">Remove</button>
+              <button class="btn btn-secondary promote">Promote</button>
+               <button class="btn btn-secondary demote">Demote</button>
+               </div>
         </div>
       </div>
     </div>`

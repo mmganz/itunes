@@ -45,16 +45,25 @@ body {
   text-align: center;
   font-family: Raleway; }
 
+.buttons {
+  display: inline-block; }
+
 .btn {
   background: transparent;
   color: white;
   border: white;
   font-family: Raleway; }
 
+.remove {
+  margin-right: 20px; }
+
 #song-list {
   margin-left: 33%; }
 
 .template {
+  display: inline-block; }
+
+.stay-template {
   display: inline-block; }
 
 .card {
