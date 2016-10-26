@@ -6,23 +6,26 @@
   <title>MG Itunes</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/css/bootstrap.min.css">
   <link rel="stylesheet" href="bundle.css">
-  <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
-  <script src="itunes-service.js"></script>
-  <script src="app.js"></script>
 </head>
 
 <body>
 
+  <div class="card-deck-wrapper">
+  <div class="card-deck">
+    <div id="my-tunes"></div>
+  </div>
+  </div>
 
 <div class="form">
-  <form class="form-inline">
+  <form class="form-inline" onsubmit="getMusic(event)">
     <!--DO NOT MODIFY THE ID OR ONCLICK ATTRIBUTES IN THIS FORM-->
     <div class="form-group">
       <input type="text" class="form-control" id="artist" placeholder="Artist Name" />
-      <button type="button" class="btn btn-default btn-transparent" id="get-music-button" onclick="getMusic()">Get Music</button>
+  <button type="sumbit" class="btn btn-default btn-transparent" id="get-music-button">Get Music</button>
     </div>
   </form>
   </div>   
+
 
 <div class="card-deck-wrapper">
   <div class="card-deck">
@@ -31,8 +34,10 @@
 </div>
 
 
-
-
+  <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+  <script src="itunes-service.js"></script>
+  <script src="my-tunes-service.js"></script>
+  <script src="app.js"></script>
 </body>
 
 </html>
