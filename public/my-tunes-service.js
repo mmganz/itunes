@@ -77,6 +77,22 @@ function saveTracks(){
     localStorage.setItem('song', JSON.stringify(myArray))
 }
 
+function savePlaylist(playlist, cb){
+
+}
+
+ function create(name, cb){
+     let playlist = {
+         id: uuid.v4(),
+         name: name,
+         downvotes: downvotes,
+         upvote: upvotes, 
+         songs: myTunes
+         }
+        Playlist.create(playlist).then(cb).catch(cb) 
+
+     }
+
 function loadTracks(){
         var song = localStorage.getItem('song')
         if(song){
