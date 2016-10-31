@@ -25,7 +25,10 @@ router.route('/:id?')
     })
   })
 .put(function(req, res, next){
-    res.send('working on it.....')
+    Playlist.editPlaylist(req.body.playlistId, req.body.song), function(){
+      if(playlist.stack) { return next(playlist) }
+      return res.send(playlist)}
+    
 })
 .delete(function(req, res, next){
     res.send('we are working on it...')
