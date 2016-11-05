@@ -66,7 +66,6 @@ if(target != "#my-tunes"){
           <audio controls>
             <source id="audios" src="${songs.preview}">
             </audio>
-             <button onclick="helper(${songs.id})" class="btn btn-secondary">Add Song to MyTunes</button>
         </div>
       </div>
     </div>`
